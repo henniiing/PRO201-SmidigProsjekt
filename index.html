@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Byåa kultursti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="site" id="site">
+    <header class="header">
+        <h1>Interessepunkt</h1>
+    </header>
+    <figure class="image">
+        <img src="images/interessepunkt__bilde.jpg" alt="Arbeidere på sagbruk">
+    </figure>
+    <main class="main-area">
+        <section class="info-box">
+            <div class="info-box-buttons">
+                <button class="btn-text">
+                    <a href=""><img src=" images/text-icon.svg" alt=""></a>
+                </button>
+                <button class="btn-speech">
+                    <a href=""><img src="images/voice-icon.svg" alt=""></a>
+                </button>
+            </div>
+            <div class="text-container">
+                <p id="question">Tekst kommer her</p>
+            </div>
+        </section>
+        <section class="quiz-container" id="quizSet">
+            <div id="options" class="options">
+                <button id="btn1" class="button"><span id="option1">Svaralternativ1</span></button>
+                <button id="btn2" class="button"><span id="option2">Svaralternativ2</span></button>
+                <button id="btn3" class="button"><span id="option3">Svaralternativ3</span></button>
+                <button id="btn4" class="button"><span id="option4">Svaralternativ4</span></button>
+            </div>
+            <button id="submit">Neste Spørsmål</button>
+        </section>
+        <section id="resultBox">
+            <p id="result">Gratulerer. Du fikk riktig på mer enn halvparten</p>
+            <button id="retake">Ta quiz på ny</button>
+        </section>
+        <section>
+            <p id="progress">Spørsmål 1 av 10</p>
+            <div id="timer">Tidsur</div>
+        </section>
+    </main>
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
