@@ -9,10 +9,10 @@ var questions = [
     },
     {
         "question": "Hva het gårdene som eide Byåa i fellesskap?",
-        "option1": "Ikke dette",
+        "option1": "Gundersen",
         "option2": "By og Narvestad",
-        "option3": "Heller ikke dette",
-        "option4": "I hvert fall ikke dette",
+        "option3": "Rælingen",
+        "option4": "Knudsen og Hansen",
         "answer": 2
     },
     {
@@ -26,9 +26,9 @@ var questions = [
     {
         "question": "Hva ble sagene i Byåa på Bys og Narvestads grunn kalt??",
         "option1": "Bybruket",
-        "option2": "Ikke riktig svar",
-        "option3": "Heller ikke riktig svar",
-        "option4": "No entiendo",
+        "option2": "Sagmoen",
+        "option3": "Bytårnet",
+        "option4": "Sagverket",
         "answer": 1
     },
     {
@@ -57,10 +57,10 @@ var questions = [
     },
     {
         "question": "Hva skal høygaffelen på kommunevåpenet illustrere?",
-        "option1": "Ikke dette",
-        "option2": "Heller ikke dette",
+        "option1": "De tre musketerer",
+        "option2": "Middelhavet",
         "option3": "Nitelva, Leira og Glomma",
-        "option4": "Ikke dette heller",
+        "option4": "Bestikk",
         "answer": 3
     },
     {
@@ -73,15 +73,15 @@ var questions = [
     },
     {
         "question": "Hva symboliserer grønnfargen på Rælingens kommunevåpen? ",
-        "option1": "Ikke dette",
-        "option2": "Ikke dette heller",
-        "option3": "Heller ikke dette",
+        "option1": "Bøndenes favorittfarge",
+        "option2": "Gress",
+        "option3": "Tilfeldig farge",
         "option4": "Skog",
         "answer": 4
     },
     {
         "question": "Hva symboliserer blåfargen på Rælingens kommunevåpen?",
-        "option1": "Skog",
+        "option1": "Tilfeldig farge",
         "option2": "Vann",
         "option3": "Dyrket mark",
         "option4": "Himmel",
@@ -89,10 +89,10 @@ var questions = [
     },
     {
         "question": "Hva symboliserer støttefargene lilla og gul på Rælingens kommunevåpen?",
-        "option1": "Skog",
+        "option1": "Planter",
         "option2": "Den urbane delen av Rælingen",
         "option3": "Dyrket mark",
-        "option4": "Himmel",
+        "option4": "Tilfeldig farger",
         "answer": 2
     }
 ];
