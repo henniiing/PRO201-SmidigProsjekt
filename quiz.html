@@ -1,0 +1,57 @@
+<!-- Multiple 
+lines of comments
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Quiz</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style-quiz.css" />
+</head>
+
+<body class="site" id="site">
+    <header>
+        <h1 id="h1">Quiz</h1>
+    </header>
+    <main id="quiz">
+        <section id="tracker">
+            <article class="nos" id="no1">1</article>
+            <article class="nos" id="no2">2</article>
+            <article class="nos" id="no3">3</article>
+            <article class="nos" id="no4">4</article>
+            <article class="nos" id="no5">5</article>
+            <article class="nos" id="no6">6</article>
+            <article class="nos" id="no7">7</article>
+            <article class="nos" id="no8">8</article>
+            <article class="nos" id="no9">9</article>
+            <article class="nos" id="no10">10</article>
+        </section>
+        <hr style="margin-bottom: 20px;">
+        <section id="quizSet">
+            <p id="question">Spørsmålstekst</p>
+            <div id="options" class="options">
+                <button id="btn1" class="button"><span id="option1">Svaralternativ1</span></button>
+                <button id="btn2" class="button"><span id="option2">Svaralternativ2</span></button>
+                <button id="btn3" class="button"><span id="option3">Svaralternativ3</span></button>
+                <button id="btn4" class="button"><span id="option4">Svaralternativ4</span></button>
+            </div>
+            <button id="submit">Neste spørsmål</button>
+        </section>
+        <section id="resultBox">
+            <p id="result">Gratulerer. Du fikk riktig på mer enn halvparten</p>
+            <button id="retake">Ta quiz på ny</button>
+        </section>
+        <hr style="margin-top: 30px;">
+
+        <footer>
+            <p id="progress">Spørsmål 1 av 10</p>
+            <div id="timer">Tidsur</div>
+        </footer>
+    </main>
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
