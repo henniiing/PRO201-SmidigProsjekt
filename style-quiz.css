@@ -12,30 +12,61 @@ html {
 .site {
     max-width: 100em;
     height: 100vh;
-    margin: 0 auto;
     display: grid;
+    margin: 0 auto;
     grid-template-columns: 30px auto 30px;
-    grid-template-rows: auto, repeat(3, 200px);
-    grid-row-gap: 10px;
-    background-color: green;
+    /*   grid-template-rows: 100px, 200px repeat(2, 200px) auto; */
+    grid-template-rows: 60px auto auto auto auto auto;
+    /* grid-row-gap: 10px; */
+    background-color: #2EBF8B;
 }
 
 header {
     grid-column: 1/4;
     grid-row: 1;
-    box-shadow: 0px 4px 6px rgba(0, 26, 51, 0.5);
+    display: flex;
+    flex-direction: row;
+    box-shadow: 1px 4px 4px rgba(0, 26, 51, 0.5);
+    box-sizing: border-box;
+    height: 60px;
     background-color: #FFF;
+    z-index: 2;
+}
+
+header .logo {
+    height: 60px;
+    width: 140px;
+    padding: 5px 0 5px 5px;
+}
+
+header .logo a {
+    display: block;
+}
+
+header h1 {
+    width: 100%;
+    align-self: center;
+    text-align: center;
+    padding-right: 140px;
+    font-size: 2em;
+    color: #001a33;
 }
 
 main,
 #quiz {
-    grid-column: 1/4;
-    background-color: #99ceff;
-    height: auto;
+    grid-column: 2/3;
+    background-color: aliceblue;
+    min-height: 400px;
     width: 100%;
-    margin: 10px auto;
-    border-radius: 40px;
-    padding: 2px 50px 50px 50px;
+    border-radius: 0 0 40px 40px;
+    border-top-width: 0;
+    border-right-width: 2px;
+    border-left-width: 2px;
+    border-bottom-width: 2px;
+    border-color: lightgrey;
+    border-style: solid;
+    padding: 2px 50px 10px 50px;
+    z-index: 1;
 }
 
 #tracker,
@@ -46,27 +77,24 @@ footer {
 }
 
 #tracker {
-    grid-row: 2;
-    background-color: aliceblue;
-}
-
-#h1 {
-    position: relative;
-    text-align: center;
-    font-size: 3.2em;
-    color: #001a33;
-    margin: 30px 10px 30px 10px;
-    padding: 2px 0px;
-}
-
-#tracker {
     /* position: relative;
-	margin: 20px 10px 10px 10px;
 	width: 100%;
 	padding: 0 10px 0 10px; */
+    margin: 20px 0 0 0;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    height: auto;
     width: 100%;
+    grid-row: 2;
+}
+
+#quizSet {
+    grid-row: 3;
+}
+
+#resultBox {
+    grid-row: 4;
 }
 
 .nos {
@@ -77,12 +105,12 @@ footer {
     background-color: #8c8c8c;
     border-radius: 50%;
     text-align: center;
-    color: white;
+    color: #FFF;
     padding: 11px;
     margin: 0px 10px 10px 10px;
     font-weight: bolder;
     font-size: 22px;
-    border: 1.5px solid white;
+    border: 1.5px solid #8c8c8c;
 }
 
 hr {
@@ -93,7 +121,7 @@ hr {
 
 #question {
     position: relative;
-    color: white;
+    color: #000;
     font-size: 35px;
     font-weight: bold;
     text-align: left;
@@ -101,14 +129,18 @@ hr {
 }
 
 .options {
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* position: relative; */
     width: 100%;
     margin-top: 15px;
 }
 
 .options .button {
-    border: 1px solid red;
     width: 40%;
+    min-height: 100px;
 }
 
 .button {
@@ -116,12 +148,13 @@ hr {
     background-color: #e6f3ff;
     width: 250px;
     height: auto;
-    border: 1.5px solid #339cff;
+    border: 1.5px solid #FFF;
     /* border-radius: 75px; */
     margin: 10px;
 }
 
 .button span {
+    display: block;
     text-align: center;
     font-size: 20px;
     padding: 10px;
@@ -136,7 +169,9 @@ hr {
 
 #submit {
     position: relative;
-    float: right;
+    display: block;
+    /* float: right; */
+    margin: 10px auto;
     background-color: #595959;
     color: white;
     width: 230px;
@@ -145,7 +180,7 @@ hr {
     font-size: 28px;
     font-weight: 900;
     font-family: serif;
-    margin: 5px 0px 25px 10px;
+    /* margin: 5px 0px 25px 10px;*/
     border: 1px solid grey;
     text-align: center;
     box-shadow: 2px 2px 0px 0px rgba(191, 191, 191, 0.5);
@@ -157,27 +192,29 @@ hr {
 }
 
 footer {
-    position: relative;
-    margin-bottom: 30px;
-    border: 1px solid orange;
+    grid-row: 5;
+    display: flex;
+    justify-content: space-between;
+    /*   position: relative; */
 }
 
 #progress {
-    position: relative;
-    float: left;
-    text-align: right;
-    margin-top: 20px;
-    font-size: 30px;
-    color: white;
+    /*   position: relative;
+    float: left; */
+    text-align: left;
 }
 
 #timer {
-    position: relative;
-    float: right;
+    /*   position: relative;
+    float: right; */
     text-align: right;
+}
+
+#progress,
+#timer {
     margin-top: 20px;
-    font-size: 30px;
-    color: white;
+    font-size: 1.8em;
+    color: #000;
 }
 
 #resultBox {
@@ -189,7 +226,7 @@ footer {
 #result {
     text-align: center;
     font-size: 40px;
-    color: white;
+    color: #000;
 }
 
 #retake {
@@ -219,3 +256,11 @@ footer {
 #retake:focus {
     outline: none;
 }
+
+
+@media screen and (min-width: 577px) {}
+
+
+/*PC 971px and higher*/
+
+@media screen and (min-width: 971px) {}

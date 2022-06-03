@@ -29,7 +29,7 @@ let button4 = $("btn4");
 
 let tracker;
 let countDown;
-let secsInput = 10;
+let secsInput = 30;
 let seconds = secsInput;
 let t;
 
@@ -86,7 +86,7 @@ function finalScore() {
         result.innerHTML = "Gratulerer. Du fikk flere enn fem riktige svar. <br> Din score ble " + score + "!";
     }
     else {
-        result.innerHTML = "Beklager. Du fikk færre enn seks riktige svar. <br> Din score ble " + score + "!";
+        result.innerHTML = "Du fikk færre enn seks riktige svar. <br> Din score ble " + score + "!<br><br>Prøv igjen. Du kan helt sikkert gjøre bedre";
     }
 }
 
@@ -180,21 +180,21 @@ function optionSelect(e) {
     parentEl.style.backgroundColor = "#1aff1a";
 
     switch (e.target.id) {
-        case "option1": button2.style.backgroundColor = "#e6f3ff";
-            button3.style.backgroundColor = "#e6f3ff";
-            button4.style.backgroundColor = "#e6f3ff";
+        case "option1": button2.style.backgroundColor = "#5EC8E5";
+            button3.style.backgroundColor = "#FFD457";
+            button4.style.backgroundColor = "#67B346";
             break;
-        case "option2": button1.style.backgroundColor = "#e6f3ff";
-            button3.style.backgroundColor = "#e6f3ff";
-            button4.style.backgroundColor = "#e6f3ff";
+        case "option2": button1.style.backgroundColor = "#AF4879";
+            button3.style.backgroundColor = "#FFD457";
+            button4.style.backgroundColor = "#67B346";
             break;
-        case "option3": button1.style.backgroundColor = "#e6f3ff";
-            button2.style.backgroundColor = "#e6f3ff";
-            button4.style.backgroundColor = "#e6f3ff";
+        case "option3": button1.style.backgroundColor = "#AF4879";
+            button2.style.backgroundColor = "#5EC8E5";
+            button4.style.backgroundColor = "#67B346";
             break;
-        case "option4": button1.style.backgroundColor = "#e6f3ff";
-            button2.style.backgroundColor = "#e6f3ff";
-            button3.style.backgroundColor = "#e6f3ff";
+        case "option4": button1.style.backgroundColor = "#AF4879";
+            button2.style.backgroundColor = "#5EC8E5";
+            button3.style.backgroundColor = "#FFD457";
             break;
     }
 
